@@ -1,0 +1,80 @@
+baseURL: "https://llm-system.github.io/"
+title: 深入大模型系统
+theme: hugo-PaperMod
+languageCode: zh-Hans
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+
+pagination:
+  pagerSize: 10
+
+menu:
+  main:
+    - name: 首页
+      url: /
+      weight: 1
+    - name: 札记
+      url: posts/
+      weight: 2
+    - name: 关于
+      url: about/
+      weight: 3
+
+params:
+  env: production
+  description: 本书系统性地探讨了如何打造一个面向开放世界、具备终身学习能力的认知系统。
+  author: "Bai, Yu"
+  keywords:
+    - 大模型
+    - 大语言模型
+    - LLM
+    - 提示工程
+    - 智能体
+    - RAG
+    - Transformer
+    - 深度学习
+    - 预训练
+    - 认知架构
+  images:
+    - /images/book-cover.avif
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: false
+  ShowDate: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: true
+  ShowToc: true
+  profileMode:
+    enabled: false
+  homeInfoParams:
+    Title: 深入大模型系统
+    Content: 本书探讨如何打造面向开放世界、具备终身学习能力的认知系统。由于出版物各章各节需保持相对独立，这里提供一份创作札记，串联全书脉络，帮助读者理解各章背后的思考。
+  socialIcons:
+    - name: linkedin
+      title: 作者
+      url: "https://www.linkedin.com/in/baiyucn/"
+    - name: github
+      title: 勘误
+      url: "https://github.com/llm-system/llm-system.github.io/issues"
+    - name: douban
+      title: 豆瓣
+      url: "https://book.douban.com/subject/38236276/"
+    - name: buymeacoffee
+      title: 京东
+      url: "https://u.jd.com/Jak7omG"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
